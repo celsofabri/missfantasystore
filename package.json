@@ -4,6 +4,7 @@
     "node": ">=4"
   },
   "dependencies": {
+    "gh-pages": "^3.1.0",
     "modernizr": "^3.7.1"
   },
   "devDependencies": {
@@ -39,6 +40,7 @@
     "serve:dist": "cross-env NODE_ENV=production gulp serve",
     "start": "gulp serve",
     "build": "cross-env NODE_ENV=production gulp",
+    "deploy": "gh-pages -d dist",
     "test": "npm run serve:test",
     "tasks": "gulp --tasks"
   },

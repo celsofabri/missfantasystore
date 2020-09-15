@@ -1,28 +1,91 @@
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+$kumbh: 'Kumbh Sans', sans-serif;
+
+* {
+  // Box Model
+  box-sizing: border-box;
 }
 
-body {
-  background: #fafafa;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #333;
+.wrap {
+  // Box Model
+  max-width: 1440px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 300px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
-  h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
+.main {
+  // Box Model
+  width: 100%;
+  height: 100vh;
+
+  .wrap {
+    // Box Model
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+.logo {
+  // Box Model
+  max-width: 500px;
+  margin: 0 auto;
+
+  img {
+    // Box Model
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+    // Visual
+    border: 0;
+  }
+}
+
+.links {
+  // Box Model
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__item {
+    // Box Model
+    margin: 20px;
+    padding: 10px 0 10px 30px;
+
+    // Typography
+    font-family: $kumbh;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    // Visual
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 24px auto;
+    transition: all .4s ease-out;
+
+    &--whatsapp {
+      // Visual
+      background-image: url('../images/icon-whatsapp.svg');
+    }
+
+    &--email {
+      // Visual
+      background-image: url('../images/icon-email.svg');
+    }
+
+    &--products {
+      // Visual
+      background-image: url('../images/icon-fantasy.svg');
+    }
+
+    &:hover {
+      color: #b97f80;
+    }
   }
 }

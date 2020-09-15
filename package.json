@@ -40,7 +40,8 @@
     "serve:dist": "cross-env NODE_ENV=production gulp serve",
     "start": "gulp serve",
     "build": "cross-env NODE_ENV=production gulp",
-    "deploy": "yarn build && gh-pages -d dist",
+    "predeploy": "yarn build && cp CNAME ./dist",
+    "deploy": "gh-pages -d dist",
     "test": "npm run serve:test",
     "tasks": "gulp --tasks"
   },

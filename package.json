@@ -1,5 +1,5 @@
 {
-  "private": true,
+  "homepage": ".",
   "engines": {
     "node": ">=4"
   },

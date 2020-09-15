@@ -3,6 +3,8 @@
 This project was created to disclose the shop the **Miss Fantasy Store**.
 It's a shop of fantasies to parties and cosplays.
 
+![Miss Fantasy Store](./missfantasystore-readme.png)
+
 ## Requirements
 
 Is need that you have `node 12+` in your machine.

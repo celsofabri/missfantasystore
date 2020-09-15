@@ -2,7 +2,13 @@ $kumbh: 'Kumbh Sans', sans-serif;
 
 * {
   // Box Model
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  // Visual
   box-sizing: border-box;
+  outline: none;
 }
 
 .wrap {
